@@ -1,0 +1,168 @@
+@font-face {
+    font-family: raleway;
+    src: url(Raleway-Light.ttf);
+}
+
+@font-face {
+    font-family: raleway-bold;
+    src: url(Raleway-SemiBold.ttf);
+}
+
+body {
+    font-family: raleway;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #173a24;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.navbar {
+    top: 0;
+    left: 0;
+    background-color: #173a24;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: azure;
+    text-decoration: none;
+    font-size: 10px;
+    padding: 10px;
+}
+
+.navbar a:hover {
+    background-color: rgba(0, 0, 0, 0.301);
+}
+
+.logo {
+    color: azure;
+    font-weight: bold;
+}
+
+.logo a {
+    color: inherit;
+    font-weight: inherit;
+    font-size: 35px;
+}
+
+.logo a:hover {
+    color: azure;
+    font-size: 45px;
+    transition: all 1s;
+}
+
+.link {
+    font-size: 18px;
+    display: flex;
+    margin-right: 10px;
+    align-items: center;
+}
+
+.link a {
+    position: relative;
+    color: black;
+    font-family: raleway-bold;
+    font-size: inherit;
+    margin: 1rem;
+    transition: all 2s;
+}
+
+.link a:hover {
+    color: azure;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.link a:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    left: 50%;
+    height: 3px;
+    bottom: 2px;
+    background-color: azure;
+    transition: width 1s, left 1s;
+}
+
+.link a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.menu-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.menu-item {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.menu-item img {
+    width: 100%;
+    height: 340px;
+}
+
+.menu-item h3 {
+    margin: 10px 0;
+}
+
+.menu-item p {
+    padding: 0 10px 10px;
+}
+
+.menu-section button {
+    background-color: #543522;
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.menu-section button:hover {
+    background-color: rgba(0, 0, 0, 0.301);
+    font-size: 18px;
+    transition: all 0,5ms;
+}
+
+.info-section {
+    padding-top: 240px;
+    padding-bottom: 200px;
+    background-image: url(sandwich.jpg);
+    background-size: cover;
+    background-position: center;
+    color: azure;
+    font-weight: bold;
+    font-family: raleway-bold, Arial, sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+.footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 32px;
+}
